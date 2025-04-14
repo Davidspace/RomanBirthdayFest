@@ -29,12 +29,12 @@ import {
 } from "@/components/ui/select";
 
 const formSchema = z.object({
-  name: z.string().min(2, { message: "Name must be at least 2 characters" }),
-  email: z.string().email({ message: "Please enter a valid email address" }),
+  name: z.string().min(2, { message: "El nombre debe tener al menos 2 caracteres" }),
+  email: z.string().email({ message: "Por favor, introduce una dirección de email válida" }),
   attendance: z.enum(["yes", "no", "maybe"], {
-    required_error: "Please select your attendance status",
+    required_error: "Por favor, selecciona tu estado de asistencia",
   }),
-  guests: z.string().min(1, { message: "Please select number of guests" }),
+  guests: z.string().min(1, { message: "Por favor, selecciona el número de invitados" }),
   message: z.string().optional(),
 });
 
@@ -66,15 +66,15 @@ const RsvpForm: React.FC = () => {
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ["/api/rsvps"] });
       toast({
-        title: "RSVP Submitted",
-        description: "Thank you for your RSVP! The Empresses await your arrival.",
+        title: "Confirmación Enviada",
+        description: "¡Gracias por tu confirmación! Las Emperatrices esperan tu llegada.",
       });
       form.reset();
     },
     onError: (error) => {
       toast({
         title: "Error",
-        description: error.message || "There was an error submitting your RSVP. Please try again.",
+        description: error.message || "Hubo un error al enviar tu confirmación. Por favor, inténtalo de nuevo.",
         variant: "destructive",
       });
     },
@@ -156,7 +156,7 @@ const RsvpForm: React.FC = () => {
                 name="attendance"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className="block font-cinzel text-muted mb-2">WILL YOU JOIN THE FESTIVITIES?</FormLabel>
+                    <FormLabel className="block font-cinzel text-muted mb-2">¿TE UNIRÁS A LAS FESTIVIDADES?</FormLabel>
                     <FormControl>
                       <RadioGroup
                         onValueChange={field.onChange}
@@ -165,15 +165,15 @@ const RsvpForm: React.FC = () => {
                       >
                         <div className="flex items-center space-x-2">
                           <RadioGroupItem value="yes" id="yes" />
-                          <label htmlFor="yes">Yes, I shall attend</label>
+                          <label htmlFor="yes">Sí, asistiré</label>
                         </div>
                         <div className="flex items-center space-x-2">
                           <RadioGroupItem value="no" id="no" />
-                          <label htmlFor="no">No, I must decline</label>
+                          <label htmlFor="no">No, debo declinar</label>
                         </div>
                         <div className="flex items-center space-x-2">
                           <RadioGroupItem value="maybe" id="maybe" />
-                          <label htmlFor="maybe">Perhaps, if Jupiter wills it</label>
+                          <label htmlFor="maybe">Quizás, si Júpiter lo permite</label>
                         </div>
                       </RadioGroup>
                     </FormControl>
@@ -187,21 +187,21 @@ const RsvpForm: React.FC = () => {
                 name="guests"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className="block font-cinzel text-muted mb-2">NUMBER OF GUESTS IN YOUR PARTY</FormLabel>
+                    <FormLabel className="block font-cinzel text-muted mb-2">NÚMERO DE INVITADOS EN TU GRUPO</FormLabel>
                     <Select
                       onValueChange={field.onChange}
                       defaultValue={field.value}
                     >
                       <FormControl>
                         <SelectTrigger className="w-full p-3 border-2 border-muted rounded-sm focus:border-primary focus:outline-none">
-                          <SelectValue placeholder="Select number of guests" />
+                          <SelectValue placeholder="Seleccionar número de invitados" />
                         </SelectTrigger>
                       </FormControl>
                       <SelectContent>
-                        <SelectItem value="1">Just myself (1)</SelectItem>
-                        <SelectItem value="2">Myself and a companion (2)</SelectItem>
-                        <SelectItem value="3">A small group (3)</SelectItem>
-                        <SelectItem value="4">My entourage (4+)</SelectItem>
+                        <SelectItem value="1">Solo yo (1)</SelectItem>
+                        <SelectItem value="2">Yo y un acompañante (2)</SelectItem>
+                        <SelectItem value="3">Un pequeño grupo (3)</SelectItem>
+                        <SelectItem value="4">Mi séquito (4+)</SelectItem>
                       </SelectContent>
                     </Select>
                     <FormMessage />
@@ -214,7 +214,7 @@ const RsvpForm: React.FC = () => {
                 name="message"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className="block font-cinzel text-muted mb-2">MESSAGE TO THE BIRTHDAY EMPRESSES</FormLabel>
+                    <FormLabel className="block font-cinzel text-muted mb-2">MENSAJE PARA LAS EMPERATRICES CUMPLEAÑERAS</FormLabel>
                     <FormControl>
                       <Textarea
                         {...field}
@@ -233,7 +233,7 @@ const RsvpForm: React.FC = () => {
                   disabled={isPending}
                   className="bg-primary text-primary-foreground font-cinzel py-3 px-10 rounded-sm transform hover:scale-105 transition-transform duration-300"
                 >
-                  {isPending ? "SENDING..." : "SEND YOUR RSVP TO ROME"}
+                  {isPending ? "ENVIANDO..." : "ENVIAR TU CONFIRMACIÓN A ROMA"}
                 </Button>
               </div>
             </form>
