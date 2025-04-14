@@ -20,15 +20,15 @@ const Header: React.FC = () => {
           transition={{ duration: 0.6 }}
           className="z-10 text-center max-w-4xl mx-auto">
           <h5 className="font-cinzel text-xl md:text-2xl tracking-widest text-primary mb-4">
-            XVII KALENDS OF MAY
+            XVII CALENDAS DE MAYO
           </h5>
           <motion.h1 
             initial={{ scale: 0.9, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ delay: 0.3, duration: 0.6 }}
             className="font-cinzel font-bold text-4xl md:text-6xl lg:text-7xl tracking-wide text-primary mb-4">
-            <span className="block">ROMAN EMPIRE</span>
-            <span className="block">BIRTHDAY CELEBRATION</span>
+            <span className="block">IMPERIO ROMANO</span>
+            <span className="block">CELEBRACIÓN DE CUMPLEAÑOS</span>
           </motion.h1>
           <motion.div 
             initial={{ width: 0 }}
@@ -41,7 +41,7 @@ const Header: React.FC = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8, duration: 0.6 }}
             className="font-lato text-lg md:text-xl text-muted mb-8 max-w-2xl mx-auto">
-            Join us for a grand celebration in honor of our two birthday girls in true Roman style
+            Únete a nosotros para una gran celebración en honor a nuestras dos cumpleañeras al estilo romano
           </motion.p>
           
           <motion.div 
@@ -49,8 +49,8 @@ const Header: React.FC = () => {
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 1, duration: 0.6 }}
             className="mt-12">
-            <h3 className="font-cinzel text-2xl text-primary mb-4">COUNTDOWN TO THE FESTIVITIES</h3>
-            <CountdownTimer targetDate="May 17, 2024 18:00:00" />
+            <h3 className="font-cinzel text-2xl text-primary mb-4">CUENTA ATRÁS PARA LAS FESTIVIDADES</h3>
+            <CountdownTimer targetDate="May 17, 2025 13:00:00" />
           </motion.div>
           
           <motion.div 
@@ -61,7 +61,7 @@ const Header: React.FC = () => {
             <a 
               href="#event-details" 
               className="inline-block bg-primary hover:bg-opacity-90 text-primary-foreground font-cinzel py-3 px-8 rounded-sm transform hover:scale-105 transition-transform duration-300">
-              DISCOVER MORE
+              DESCUBRIR MÁS
             </a>
           </motion.div>
         </motion.div>
