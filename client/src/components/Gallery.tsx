@@ -9,14 +9,14 @@ interface GalleryImage {
 }
 
 const galleryImages: GalleryImage[] = [
-  { id: 1, alt: "Gallery Image 1" },
-  { id: 2, alt: "Gallery Image 2" },
-  { id: 3, alt: "Gallery Image 3" },
-  { id: 4, alt: "Gallery Image 4" },
-  { id: 5, alt: "Gallery Image 5" },
-  { id: 6, alt: "Gallery Image 6" },
-  { id: 7, alt: "Gallery Image 7" },
-  { id: 8, alt: "Gallery Image 8" }
+  { id: 1, alt: "Imagen de Galería 1" },
+  { id: 2, alt: "Imagen de Galería 2" },
+  { id: 3, alt: "Imagen de Galería 3" },
+  { id: 4, alt: "Imagen de Galería 4" },
+  { id: 5, alt: "Imagen de Galería 5" },
+  { id: 6, alt: "Imagen de Galería 6" },
+  { id: 7, alt: "Imagen de Galería 7" },
+  { id: 8, alt: "Imagen de Galería 8" }
 ];
 
 const Gallery: React.FC = () => {
@@ -64,10 +64,10 @@ const Gallery: React.FC = () => {
         <motion.div 
           variants={itemVariants}
           className="text-center mb-16">
-          <h2 className="font-cinzel text-4xl md:text-5xl text-primary mb-4">IMPERIAL GALLERY</h2>
+          <h2 className="font-cinzel text-4xl md:text-5xl text-primary mb-4">GALERÍA IMPERIAL</h2>
           <div className="w-24 h-1 bg-secondary mx-auto mb-8"></div>
           <p className="font-lato text-lg max-w-2xl mx-auto">
-            Memories from throughout the empire, documenting our birthday girls' glorious adventures
+            Recuerdos de todo el imperio, documentando las gloriosas aventuras de nuestras cumpleañeras
           </p>
         </motion.div>
         
@@ -104,7 +104,7 @@ const Gallery: React.FC = () => {
           </div>
           <div className="text-center py-2">
             <p className="font-cinzel text-lg text-primary">
-              {selectedImage?.alt || "Gallery Image"}
+              {selectedImage?.alt || "Imagen de Galería"}
             </p>
           </div>
         </DialogContent>

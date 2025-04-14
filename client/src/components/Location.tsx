@@ -55,10 +55,10 @@ const Location: React.FC = () => {
         <motion.div 
           variants={itemVariants}
           className="text-center mb-16">
-          <h2 className="font-cinzel text-4xl md:text-5xl text-primary-foreground mb-4">THE VILLA LOCATION</h2>
+          <h2 className="font-cinzel text-4xl md:text-5xl text-primary-foreground mb-4">UBICACIÓN DE LA VILLA</h2>
           <div className="w-24 h-1 bg-secondary mx-auto mb-8"></div>
           <p className="font-lato text-lg max-w-2xl mx-auto">
-            Our celebration will be held at a magnificent rural villa worthy of Caesar himself
+            Nuestra celebración se llevará a cabo en una magnífica villa rural digna del propio César
           </p>
         </motion.div>
         
@@ -76,34 +76,34 @@ const Location: React.FC = () => {
           <motion.div 
             variants={itemVariants}
             className="bg-background text-foreground p-8 rounded-sm shadow-lg">
-            <h3 className="font-cinzel text-3xl text-primary mb-6">JOURNEY TO THE CELEBRATION</h3>
+            <h3 className="font-cinzel text-3xl text-primary mb-6">VIAJE A LA CELEBRACIÓN</h3>
             
             <div className="mb-6">
               <h4 className="font-cinzel text-xl text-muted mb-2 flex items-center">
-                <i className="fas fa-map-marker-alt text-primary mr-2"></i> LOCATION
+                <i className="fas fa-map-marker-alt text-primary mr-2"></i> UBICACIÓN
               </h4>
-              <p className="font-lato pl-6">The Rural Villa (Villa Rustica)<br />Located on the countryside outskirts</p>
+              <p className="font-lato pl-6">La Villa Rural (Villa Rustica)<br />Ubicada en las afueras del campo</p>
             </div>
             
             <div className="mb-6">
               <h4 className="font-cinzel text-xl text-muted mb-2 flex items-center">
-                <i className="fas fa-horse text-primary mr-2"></i> TRANSPORTATION
+                <i className="fas fa-horse text-primary mr-2"></i> TRANSPORTE
               </h4>
-              <p className="font-lato pl-6">Chariots and carriages recommended<br />Parking available for modern vehicles</p>
+              <p className="font-lato pl-6">Se recomiendan carros y carruajes<br />Estacionamiento disponible para vehículos modernos</p>
             </div>
             
             <div className="mb-6">
               <h4 className="font-cinzel text-xl text-muted mb-2 flex items-center">
-                <i className="fas fa-info-circle text-primary mr-2"></i> IMPORTANT DETAILS
+                <i className="fas fa-info-circle text-primary mr-2"></i> DETALLES IMPORTANTES
               </h4>
-              <p className="font-lato pl-6">Detailed directions will be provided upon RSVP<br />Torches will light the path after sunset</p>
+              <p className="font-lato pl-6">Se proporcionarán indicaciones detalladas al confirmar<br />Antorchas iluminarán el camino después del anochecer</p>
             </div>
             
             <div className="mt-8">
               <a 
                 href="#rsvp" 
                 className="inline-block bg-primary hover:bg-opacity-90 text-primary-foreground font-cinzel py-3 px-8 rounded-sm transform hover:scale-105 transition-transform duration-300">
-                SECURE YOUR INVITATION
+                ASEGURA TU INVITACIÓN
               </a>
             </div>
           </motion.div>
