@@ -64,7 +64,7 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({ targetDate }) => {
         <span className="font-cinzel text-3xl md:text-4xl text-primary" id="days">
           {formatNumber(timeLeft.days)}
         </span>
-        <span className="block font-lato text-sm uppercase mt-1">Days</span>
+        <span className="block font-lato text-sm uppercase mt-1">Días</span>
       </motion.div>
       <motion.div 
         initial={{ y: 20, opacity: 0 }}
@@ -74,7 +74,7 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({ targetDate }) => {
         <span className="font-cinzel text-3xl md:text-4xl text-primary" id="hours">
           {formatNumber(timeLeft.hours)}
         </span>
-        <span className="block font-lato text-sm uppercase mt-1">Hours</span>
+        <span className="block font-lato text-sm uppercase mt-1">Horas</span>
       </motion.div>
       <motion.div 
         initial={{ y: 20, opacity: 0 }}
@@ -84,7 +84,7 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({ targetDate }) => {
         <span className="font-cinzel text-3xl md:text-4xl text-primary" id="minutes">
           {formatNumber(timeLeft.minutes)}
         </span>
-        <span className="block font-lato text-sm uppercase mt-1">Minutes</span>
+        <span className="block font-lato text-sm uppercase mt-1">Minutos</span>
       </motion.div>
       <motion.div 
         initial={{ y: 20, opacity: 0 }}
@@ -94,7 +94,7 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({ targetDate }) => {
         <span className="font-cinzel text-3xl md:text-4xl text-primary" id="seconds">
           {formatNumber(timeLeft.seconds)}
         </span>
-        <span className="block font-lato text-sm uppercase mt-1">Seconds</span>
+        <span className="block font-lato text-sm uppercase mt-1">Segundos</span>
       </motion.div>
     </div>
   );

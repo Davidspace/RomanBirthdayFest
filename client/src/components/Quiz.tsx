@@ -12,29 +12,29 @@ interface Question {
 const questions: Question[] = [
   {
     id: 1,
-    text: "Who was the first Emperor of Rome?",
+    text: "¿Quién fue el primer Emperador de Roma?",
     options: [
-      { value: "a", label: "Julius Caesar" },
-      { value: "b", label: "Augustus" },
-      { value: "c", label: "Nero" },
-      { value: "d", label: "Constantine" }
+      { value: "a", label: "Julio César" },
+      { value: "b", label: "Augusto" },
+      { value: "c", label: "Nerón" },
+      { value: "d", label: "Constantino" }
     ],
     answer: "b"
   },
   {
     id: 2,
-    text: "What was the Colosseum primarily used for?",
+    text: "¿Para qué se utilizaba principalmente el Coliseo?",
     options: [
-      { value: "a", label: "Political debates" },
-      { value: "b", label: "Religious ceremonies" },
-      { value: "c", label: "Gladiatorial contests" },
-      { value: "d", label: "Theatrical performances" }
+      { value: "a", label: "Debates políticos" },
+      { value: "b", label: "Ceremonias religiosas" },
+      { value: "c", label: "Combates de gladiadores" },
+      { value: "d", label: "Representaciones teatrales" }
     ],
     answer: "c"
   },
   {
     id: 3,
-    text: "What was the traditional Roman garment called?",
+    text: "¿Cómo se llamaba la vestimenta tradicional romana?",
     options: [
       { value: "a", label: "Kimono" },
       { value: "b", label: "Toga" },
@@ -104,13 +104,13 @@ const Quiz: React.FC = () => {
 
   const getResultMessage = (score: number) => {
     if (score === 3) {
-      return "Ave! You are a true Roman scholar worthy of attending our celebration!";
+      return "¡Ave! ¡Eres un verdadero erudito romano digno de asistir a nuestra celebración!";
     } else if (score === 2) {
-      return "Your knowledge is impressive, but there is still more to learn about Rome.";
+      return "Tu conocimiento es impresionante, pero aún hay más que aprender sobre Roma.";
     } else if (score === 1) {
-      return "Your Roman knowledge is limited. Study more before the celebration!";
+      return "Tu conocimiento romano es limitado. ¡Estudia más antes de la celebración!";
     } else {
-      return "Alas! You must study the ways of Rome before the celebration.";
+      return "¡Ay! Debes estudiar las costumbres de Roma antes de la celebración.";
     }
   };
 
@@ -125,10 +125,10 @@ const Quiz: React.FC = () => {
         variants={sectionVariants}
         className="container mx-auto max-w-4xl">
         <div className="text-center mb-16">
-          <h2 className="font-cinzel text-4xl md:text-5xl text-primary mb-4">TEST YOUR ROMAN KNOWLEDGE</h2>
+          <h2 className="font-cinzel text-4xl md:text-5xl text-primary mb-4">PRUEBA TU CONOCIMIENTO ROMANO</h2>
           <div className="w-24 h-1 bg-secondary mx-auto mb-8"></div>
           <p className="font-lato text-lg max-w-2xl mx-auto">
-            Prove yourself worthy of attending our Roman celebration by testing your knowledge of the ancient empire
+            Demuestra que eres digno de asistir a nuestra celebración romana poniendo a prueba tu conocimiento del antiguo imperio
           </p>
         </div>
         
@@ -161,20 +161,20 @@ const Quiz: React.FC = () => {
                     <button 
                       onClick={handlePrevious}
                       className="bg-muted text-muted-foreground font-cinzel py-2 px-6 rounded-sm hover:bg-opacity-90 transition-opacity">
-                      PREVIOUS
+                      ANTERIOR
                     </button>
                   )}
                   {currentQuestion < questions.length ? (
                     <button 
                       onClick={handleNext}
                       className="bg-primary text-primary-foreground font-cinzel py-2 px-6 rounded-sm hover:bg-opacity-90 transition-opacity">
-                      NEXT QUESTION
+                      SIGUIENTE PREGUNTA
                     </button>
                   ) : (
                     <button 
                       onClick={handleSubmit}
                       className="bg-secondary text-primary font-cinzel py-2 px-6 rounded-sm hover:bg-opacity-90 transition-opacity">
-                      CHECK RESULTS
+                      VER RESULTADOS
                     </button>
                   )}
                 </div>
@@ -186,7 +186,7 @@ const Quiz: React.FC = () => {
                     {score}/3
                   </span>
                 </div>
-                <h3 className="font-cinzel text-2xl text-primary mb-4">Your Roman Knowledge</h3>
+                <h3 className="font-cinzel text-2xl text-primary mb-4">Tu Conocimiento Romano</h3>
                 <p id="result-message" className="font-lato text-lg mb-6">
                   {getResultMessage(score)}
                 </p>
@@ -194,7 +194,7 @@ const Quiz: React.FC = () => {
                   <button 
                     onClick={resetQuiz}
                     className="bg-primary text-primary-foreground font-cinzel py-3 px-8 rounded-sm hover:bg-opacity-90 transition-opacity">
-                    TRY AGAIN
+                    INTENTAR DE NUEVO
                   </button>
                 </div>
               </div>

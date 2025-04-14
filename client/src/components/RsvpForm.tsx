@@ -104,10 +104,10 @@ const RsvpForm: React.FC = () => {
         variants={sectionVariants}
         className="container mx-auto max-w-4xl">
         <div className="text-center mb-16">
-          <h2 className="font-cinzel text-4xl md:text-5xl text-primary mb-4">DECLARE YOUR ATTENDANCE</h2>
+          <h2 className="font-cinzel text-4xl md:text-5xl text-primary mb-4">DECLARA TU ASISTENCIA</h2>
           <div className="w-24 h-1 bg-secondary mx-auto mb-8"></div>
           <p className="font-lato text-lg max-w-2xl mx-auto">
-            By decree of the birthday empresses, your presence is requested. Please confirm your attendance.
+            Por decreto de las emperatrices cumpleañeras, se solicita tu presencia. Por favor, confirma tu asistencia.
           </p>
         </div>
         
@@ -120,7 +120,7 @@ const RsvpForm: React.FC = () => {
                   name="name"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="block font-cinzel text-muted mb-2">YOUR NAME</FormLabel>
+                      <FormLabel className="block font-cinzel text-muted mb-2">TU NOMBRE</FormLabel>
                       <FormControl>
                         <Input
                           {...field}
@@ -137,7 +137,7 @@ const RsvpForm: React.FC = () => {
                   name="email"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="block font-cinzel text-muted mb-2">YOUR MESSAGE SCROLL (EMAIL)</FormLabel>
+                      <FormLabel className="block font-cinzel text-muted mb-2">TU PERGAMINO DE MENSAJES (EMAIL)</FormLabel>
                       <FormControl>
                         <Input
                           {...field}

@@ -78,10 +78,10 @@ const Honorees: React.FC = () => {
         <motion.div 
           variants={itemVariants}
           className="text-center mb-16">
-          <h2 className="font-cinzel text-4xl md:text-5xl text-primary-foreground mb-4">THE HONOREES</h2>
+          <h2 className="font-cinzel text-4xl md:text-5xl text-primary-foreground mb-4">LAS HOMENAJEADAS</h2>
           <div className="w-24 h-1 bg-secondary mx-auto mb-8"></div>
           <p className="font-lato text-lg max-w-2xl mx-auto">
-            Celebrating our two magnificent birthday girls in the grandeur they deserve
+            Celebrando a nuestras dos magníficas cumpleañeras con la grandeza que merecen
           </p>
         </motion.div>
         
@@ -89,10 +89,10 @@ const Honorees: React.FC = () => {
           <motion.div variants={itemVariants}>
             <HonoreeCard 
               name="AUGUSTA JULIA"
-              title="THE FIRST EMPRESS"
-              description="Known for her wisdom, grace, and unmatched hospitality throughout the empire"
-              trait1="Wine Enthusiast"
-              trait2="Expert Jester"
+              title="LA PRIMERA EMPERATRIZ"
+              description="Conocida por su sabiduría, gracia y hospitalidad inigualable en todo el imperio"
+              trait1="Entusiasta del Vino"
+              trait2="Experta Bromista"
               icon1="fas fa-wine-bottle"
               icon2="fas fa-laugh"
               imagePlaceholder="birthday-girl-1"
@@ -102,10 +102,10 @@ const Honorees: React.FC = () => {
           <motion.div variants={itemVariants}>
             <HonoreeCard 
               name="CLAUDIA AURELIA"
-              title="THE DIVINE CONSUL"
-              description="Revered for her strategic mind, artistic talent, and boundless generosity"
-              trait1="Culinary Artist"
-              trait2="Game Master"
+              title="LA DIVINA CÓNSUL"
+              description="Venerada por su mente estratégica, talento artístico y generosidad sin límites"
+              trait1="Artista Culinaria"
+              trait2="Maestra de Juegos"
               icon1="fas fa-utensils"
               icon2="fas fa-dice"
               imagePlaceholder="birthday-girl-2"

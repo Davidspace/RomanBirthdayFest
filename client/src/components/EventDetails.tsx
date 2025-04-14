@@ -38,10 +38,10 @@ const EventDetails: React.FC = () => {
         <motion.div 
           variants={itemVariants}
           className="text-center mb-16">
-          <h2 className="font-cinzel text-4xl md:text-5xl text-primary mb-4">THE CELEBRATION</h2>
+          <h2 className="font-cinzel text-4xl md:text-5xl text-primary mb-4">LA CELEBRACIÓN</h2>
           <div className="w-24 h-1 bg-secondary mx-auto mb-8"></div>
           <p className="font-lato text-lg max-w-2xl mx-auto">
-            A grand Roman celebration awaits you. Don your togas and laurel wreaths as we honor our birthday girls in true imperial fashion.
+            Una gran celebración romana te espera. Ponte tu toga y corona de laurel mientras honramos a nuestras cumpleañeras al verdadero estilo imperial.
           </p>
         </motion.div>
         
@@ -53,12 +53,12 @@ const EventDetails: React.FC = () => {
               <div className="bg-primary p-3 rounded-full mr-4">
                 <i className="fas fa-calendar-alt text-primary-foreground text-xl"></i>
               </div>
-              <h3 className="font-cinzel text-2xl text-primary">WHEN</h3>
+              <h3 className="font-cinzel text-2xl text-primary">CUÁNDO</h3>
             </div>
-            <p className="font-lato text-lg mb-4">May 17th, from sunset until the gods return to Olympus</p>
+            <p className="font-lato text-lg mb-4">17 de mayo, desde el ocaso hasta que los dioses regresen al Olimpo</p>
             <div className="font-cinzel text-muted text-lg border-t-2 border-dashed border-muted pt-4 mt-4">
-              <p>XVII Day of May</p>
-              <p>Year MMXXIV of the Common Era</p>
+              <p>Día XVII de Mayo</p>
+              <p>Año MMXXV de la Era Común</p>
             </div>
           </motion.div>
           
@@ -69,12 +69,12 @@ const EventDetails: React.FC = () => {
               <div className="bg-primary p-3 rounded-full mr-4">
                 <i className="fas fa-map-marked-alt text-primary-foreground text-xl"></i>
               </div>
-              <h3 className="font-cinzel text-2xl text-primary">WHERE</h3>
+              <h3 className="font-cinzel text-2xl text-primary">DÓNDE</h3>
             </div>
-            <p className="font-lato text-lg mb-4">At the rural villa on the outskirts of town</p>
+            <p className="font-lato text-lg mb-4">En la villa rural a las afueras de la ciudad</p>
             <div className="font-cinzel text-muted text-lg border-t-2 border-dashed border-muted pt-4 mt-4">
-              <p>The Villa Rustica</p>
-              <p>Directions provided upon RSVP</p>
+              <p>La Villa Rústica</p>
+              <p>Direcciones proporcionadas al confirmar</p>
             </div>
           </motion.div>
         </div>
@@ -83,7 +83,7 @@ const EventDetails: React.FC = () => {
           variants={itemVariants}
           className="mt-20 bg-background p-8 border-2 border-secondary rounded-sm shadow-lg">
           <div className="text-center mb-8">
-            <h3 className="font-cinzel text-3xl text-primary mb-2">THEME: ROMAN COSTUME PARTY</h3>
+            <h3 className="font-cinzel text-3xl text-primary mb-2">TEMÁTICA: FIESTA DE DISFRACES ROMANOS</h3>
             <div className="w-20 h-1 bg-secondary mx-auto mb-4"></div>
           </div>
           
@@ -92,24 +92,24 @@ const EventDetails: React.FC = () => {
               <div className="bg-primary inline-flex items-center justify-center w-16 h-16 rounded-full mb-4">
                 <i className="fas fa-theater-masks text-primary-foreground text-2xl"></i>
               </div>
-              <h4 className="font-cinzel text-xl text-muted mb-2">ATTIRE</h4>
-              <p className="font-lato">Come dressed in your finest Roman garb: togas, stolas, tunics, or laurel wreaths</p>
+              <h4 className="font-cinzel text-xl text-muted mb-2">VESTIMENTA</h4>
+              <p className="font-lato">Ven con tu mejor atuendo romano: togas, estolas, túnicas o coronas de laurel</p>
             </div>
             
             <div className="text-center">
               <div className="bg-primary inline-flex items-center justify-center w-16 h-16 rounded-full mb-4">
                 <i className="fas fa-wine-glass-alt text-primary-foreground text-2xl"></i>
               </div>
-              <h4 className="font-cinzel text-xl text-muted mb-2">FEASTING</h4>
-              <p className="font-lato">A lavish Roman banquet will be served with delicacies from across the empire</p>
+              <h4 className="font-cinzel text-xl text-muted mb-2">BANQUETE</h4>
+              <p className="font-lato">Se servirá un lujoso banquete romano con delicias de todo el imperio</p>
             </div>
             
             <div className="text-center">
               <div className="bg-primary inline-flex items-center justify-center w-16 h-16 rounded-full mb-4">
                 <i className="fas fa-music text-primary-foreground text-2xl"></i>
               </div>
-              <h4 className="font-cinzel text-xl text-muted mb-2">ENTERTAINMENT</h4>
-              <p className="font-lato">Games, music, and merrymaking in true Roman fashion throughout the evening</p>
+              <h4 className="font-cinzel text-xl text-muted mb-2">ENTRETENIMIENTO</h4>
+              <p className="font-lato">Juegos, música y alegría al estilo romano durante toda la velada</p>
             </div>
           </div>
         </motion.div>
