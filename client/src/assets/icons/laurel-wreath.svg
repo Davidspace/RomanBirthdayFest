@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <path d="M50,10 C45,25 40,40 20,50 C40,60 45,75 50,90 C55,75 60,60 80,50 C60,40 55,25 50,10 Z" fill="none" stroke="#DAA520" stroke-width="2"/>
+  <path d="M50,15 C47,27 43,40 27,48 C43,56 47,70 50,85 C53,70 57,56 73,48 C57,40 53,27 50,15 Z" fill="none" stroke="#DAA520" stroke-width="2"/>
+  <path d="M37,40 C42,44 48,46 50,47 C52,46 58,44 63,40" fill="none" stroke="#DAA520" stroke-width="2"/>
+  <path d="M37,60 C42,56 48,54 50,53 C52,54 58,56 63,60" fill="none" stroke="#DAA520" stroke-width="2"/>
+  <path d="M30,33 C38,38 46,42 50,43 C54,42 62,38 70,33" fill="none" stroke="#DAA520" stroke-width="2"/>
+  <path d="M30,67 C38,62 46,58 50,57 C54,58 62,62 70,67" fill="none" stroke="#DAA520" stroke-width="2"/>
+  <path d="M25,27 C35,34 45,38 50,40 C55,38 65,34 75,27" fill="none" stroke="#DAA520" stroke-width="2"/>
+  <path d="M25,73 C35,66 45,62 50,60 C55,62 65,66 75,73" fill="none" stroke="#DAA520" stroke-width="2"/>
+  <circle cx="50" cy="50" r="5" fill="#DAA520"/>
+</svg>

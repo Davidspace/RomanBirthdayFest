@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 150">
+  <!-- Neck -->
+  <path d="M40,10 Q30,20 30,30 L30,40 Q35,35 50,35 Q65,35 70,40 L70,30 Q70,20 60,10 Z" fill="#DAA520" stroke="#483C32" stroke-width="2"/>
+  
+  <!-- Handles -->
+  <path d="M30,40 Q20,60 20,70 Q20,75 25,80 Q30,85 30,70 L30,40" fill="#DAA520" stroke="#483C32" stroke-width="2"/>
+  <path d="M70,40 Q80,60 80,70 Q80,75 75,80 Q70,85 70,70 L70,40" fill="#DAA520" stroke="#483C32" stroke-width="2"/>
+  
+  <!-- Body -->
+  <path d="M30,40 Q35,35 50,35 Q65,35 70,40 L70,70 Q70,130 50,140 Q30,130 30,70 Z" fill="#DAA520" stroke="#483C32" stroke-width="2"/>
+  
+  <!-- Decorative bands -->
+  <path d="M30,50 Q40,45 50,45 Q60,45 70,50" fill="none" stroke="#483C32" stroke-width="1"/>
+  <path d="M30,60 Q40,55 50,55 Q60,55 70,60" fill="none" stroke="#483C32" stroke-width="1"/>
+  <path d="M30,100 Q40,105 50,105 Q60,105 70,100" fill="none" stroke="#483C32" stroke-width="1"/>
+  <path d="M30,110 Q40,115 50,115 Q60,115 70,110" fill="none" stroke="#483C32" stroke-width="1"/>
+  
+  <!-- Decorative pattern -->
+  <path d="M45,70 L45,90 L55,90 L55,70 M45,70 L50,65 L55,70" fill="none" stroke="#483C32" stroke-width="1"/>
+</svg>
