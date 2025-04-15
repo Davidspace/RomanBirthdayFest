@@ -6,17 +6,50 @@ import { Dialog, DialogContent } from "@/components/ui/dialog";
 interface GalleryImage {
   id: number;
   alt: string;
+  src: string;
 }
 
 const galleryImages: GalleryImage[] = [
-  { id: 1, alt: "Imagen de Galería 1" },
-  { id: 2, alt: "Imagen de Galería 2" },
-  { id: 3, alt: "Imagen de Galería 3" },
-  { id: 4, alt: "Imagen de Galería 4" },
-  { id: 5, alt: "Imagen de Galería 5" },
-  { id: 6, alt: "Imagen de Galería 6" },
-  { id: 7, alt: "Imagen de Galería 7" },
-  { id: 8, alt: "Imagen de Galería 8" }
+  {
+    id: 1,
+    alt: "Imagen de Galería 1",
+    src: "client/src/components/ui/images/alba_blanca.jpeg",
+  },
+  {
+    id: 2,
+    alt: "Imagen de Galería 2",
+    src: "client/src/components/WhatsApp Image 2025-04-14 at 23.46.34.jpeg",
+  },
+  {
+    id: 3,
+    alt: "Imagen de Galería 3",
+    src: "client/src/components/WhatsApp Image 2025-04-14 at 23.46.34.jpeg",
+  },
+  {
+    id: 4,
+    alt: "Imagen de Galería 4",
+    src: "client/src/components/WhatsApp Image 2025-04-14 at 23.46.34.jpeg",
+  },
+  {
+    id: 5,
+    alt: "Imagen de Galería 5",
+    src: "client/src/components/WhatsApp Image 2025-04-14 at 23.46.34.jpeg",
+  },
+  {
+    id: 6,
+    alt: "Imagen de Galería 6",
+    src: "client/src/components/WhatsApp Image 2025-04-14 at 23.46.34.jpeg",
+  },
+  {
+    id: 7,
+    alt: "Imagen de Galería 7",
+    src: "client/src/components/WhatsApp Image 2025-04-14 at 23.46.34.jpeg",
+  },
+  {
+    id: 8,
+    alt: "Imagen de Galería 8",
+    src: "client/src/components/WhatsApp Image 2025-04-14 at 23.46.34.jpeg",
+  },
 ];
 
 const Gallery: React.FC = () => {
@@ -26,23 +59,23 @@ const Gallery: React.FC = () => {
 
   const sectionVariants = {
     hidden: { opacity: 0, y: 50 },
-    visible: { 
-      opacity: 1, 
+    visible: {
+      opacity: 1,
       y: 0,
       transition: {
         duration: 0.8,
-        staggerChildren: 0.1
-      }
-    }
+        staggerChildren: 0.1,
+      },
+    },
   };
 
   const itemVariants = {
     hidden: { opacity: 0, scale: 0.8 },
-    visible: { 
-      opacity: 1, 
+    visible: {
+      opacity: 1,
       scale: 1,
-      transition: { duration: 0.5 }
-    }
+      transition: { duration: 0.5 },
+    },
   };
 
   const openImage = (image: GalleryImage) => {
@@ -55,37 +88,46 @@ const Gallery: React.FC = () => {
 
   return (
     <section id="gallery" className="py-16 md:py-24 px-4">
-      <motion.div 
+      <motion.div
         ref={ref}
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
         variants={sectionVariants}
-        className="container mx-auto max-w-6xl">
-        <motion.div 
-          variants={itemVariants}
-          className="text-center mb-16">
-          <h2 className="font-cinzel text-4xl md:text-5xl text-primary mb-4">GALERÍA IMPERIAL</h2>
+        className="container mx-auto max-w-6xl"
+      >
+        <motion.div variants={itemVariants} className="text-center mb-16">
+          <h2 className="font-cinzel text-4xl md:text-5xl text-primary mb-4">
+            GALERÍA IMPERIAL
+          </h2>
           <div className="w-24 h-1 bg-secondary mx-auto mb-8"></div>
           <p className="font-lato text-lg max-w-2xl mx-auto">
-            Recuerdos de todo el imperio, documentando las gloriosas aventuras de nuestras cumpleañeras
+            Recuerdos de todo el imperio, documentando las gloriosas aventuras
+            de nuestras cumpleañeras
           </p>
         </motion.div>
-        
+
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {galleryImages.map((image) => (
-            <motion.div 
+            <motion.div
               key={image.id}
               variants={itemVariants}
               className="relative overflow-hidden bg-muted group"
-              style={{ paddingTop: "100%" }}>
+              style={{ paddingTop: "100%" }}
+            >
+              <img
+                src={image.src}
+                alt={image.alt}
+                className="absolute inset-0 w-full h-full object-cover"
+              />
               <div className="absolute inset-0 flex items-center justify-center bg-muted">
                 <i className="fas fa-image text-4xl text-muted-foreground opacity-30"></i>
               </div>
               <div className="absolute inset-0 bg-primary bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
                 <div className="transform scale-0 group-hover:scale-100 transition-transform duration-300">
-                  <button 
+                  <button
                     onClick={() => openImage(image)}
-                    className="bg-background text-primary p-2 rounded-full">
+                    className="bg-background text-primary p-2 rounded-full"
+                  >
                     <i className="fas fa-expand-alt"></i>
                   </button>
                 </div>
@@ -98,6 +140,11 @@ const Gallery: React.FC = () => {
       <Dialog open={selectedImage !== null} onOpenChange={closeImage}>
         <DialogContent className="sm:max-w-4xl bg-background border-2 border-secondary">
           <div className="relative pt-[75%] w-full overflow-hidden">
+            <img
+              src={selectedImage?.src}
+              alt={selectedImage?.alt}
+              className="absolute inset-0 w-full h-full object-cover"
+            />
             <div className="absolute inset-0 flex items-center justify-center bg-muted">
               <i className="fas fa-image text-6xl text-muted-foreground opacity-30"></i>
             </div>

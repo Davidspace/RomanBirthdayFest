@@ -27,7 +27,6 @@ const Header: React.FC = () => {
             animate={{ scale: 1, opacity: 1 }}
             transition={{ delay: 0.3, duration: 0.6 }}
             className="font-cinzel font-bold text-4xl md:text-6xl lg:text-7xl tracking-wide text-primary mb-4">
-            <span className="block">IMPERIO ROMANO</span>
             <span className="block">CELEBRACIÓN DE CUMPLEAÑOS</span>
           </motion.h1>
           <motion.div 
@@ -41,7 +40,7 @@ const Header: React.FC = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8, duration: 0.6 }}
             className="font-lato text-lg md:text-xl text-muted mb-8 max-w-2xl mx-auto">
-            Únete a nosotros para una gran celebración en honor a nuestras dos cumpleañeras al estilo romano
+            Únete a nosotros para una gran celebración en honor a las dos diosas canileras
           </motion.p>
           
           <motion.div 
