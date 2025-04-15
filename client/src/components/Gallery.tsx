@@ -13,42 +13,42 @@ const galleryImages: GalleryImage[] = [
   {
     id: 1,
     alt: "Imagen de Galería 1",
-    src: "client/src/components/ui/images/alba_blanca.jpeg",
+    src: "/src/components/ui/images/alba_blanca.jpeg",
   },
   {
     id: 2,
     alt: "Imagen de Galería 2",
-    src: "client/src/components/WhatsApp Image 2025-04-14 at 23.46.34.jpeg",
+    src: "/src/components/ui/images/WhatsApp Image 2025-04-14 at 23.50.39.jpeg",
   },
   {
     id: 3,
     alt: "Imagen de Galería 3",
-    src: "client/src/components/WhatsApp Image 2025-04-14 at 23.46.34.jpeg",
+    src: "/src/components/ui/images/WhatsApp Image 2025-04-14 at 23.51.07.jpeg",
   },
   {
     id: 4,
     alt: "Imagen de Galería 4",
-    src: "client/src/components/WhatsApp Image 2025-04-14 at 23.46.34.jpeg",
+    src: "/src/components/ui/images/WhatsApp Image 2025-04-14 at 23.51.08.jpeg",
   },
   {
     id: 5,
     alt: "Imagen de Galería 5",
-    src: "client/src/components/WhatsApp Image 2025-04-14 at 23.46.34.jpeg",
+    src: "/src/components/ui/images/WhatsApp Image 2025-04-14 at 23.51.09.jpeg",
   },
   {
     id: 6,
     alt: "Imagen de Galería 6",
-    src: "client/src/components/WhatsApp Image 2025-04-14 at 23.46.34.jpeg",
+    src: "/src/components/ui/images/WhatsApp Image 2025-04-14 at 23.51.11.jpeg",
   },
   {
     id: 7,
     alt: "Imagen de Galería 7",
-    src: "client/src/components/WhatsApp Image 2025-04-14 at 23.46.34.jpeg",
+    src: "/src/components/ui/images/WhatsApp Image 2025-04-14 at 23.55.36.jpeg",
   },
   {
     id: 8,
     alt: "Imagen de Galería 8",
-    src: "client/src/components/WhatsApp Image 2025-04-14 at 23.46.34.jpeg",
+    src: "/src/components/ui/images/WhatsApp Image 2025-04-14 at 23.51.09 (2).jpeg",
   },
 ];
 
