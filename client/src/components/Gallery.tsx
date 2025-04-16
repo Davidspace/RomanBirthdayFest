@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
+import albaBlanca from "@/components/ui/images/alba_blanca.jpeg";
 
 interface GalleryImage {
   id: number;
@@ -13,7 +14,7 @@ const galleryImages: GalleryImage[] = [
   {
     id: 1,
     alt: "Imagen de Galería 1",
-    src: "/src/components/ui/images/alba_blanca.jpeg",
+    src: albaBlanca,
   },
   {
     id: 2,
