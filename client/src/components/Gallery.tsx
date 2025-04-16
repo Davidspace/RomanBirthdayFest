@@ -109,7 +109,7 @@ const Gallery: React.FC = () => {
           </h2>
           <div className="w-24 h-1 bg-secondary mx-auto mb-8"></div>
           <p className="font-lato text-lg max-w-2xl mx-auto">
-            Recuerdos de todo el imperio, documentando las gloriosas aventuras
+            Recuerdos por todo el imperio, documentando las gloriosas aventuras
             de nuestras cumpleañeras
           </p>
         </motion.div>
