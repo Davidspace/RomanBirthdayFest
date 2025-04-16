@@ -1,8 +1,16 @@
+
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import albaBlanca from "@/components/ui/images/alba_blanca.jpeg";
+import image2 from "@/components/ui/images/WhatsApp Image 2025-04-14 at 23.50.39.jpeg";
+import image3 from "@/components/ui/images/WhatsApp Image 2025-04-14 at 23.51.07.jpeg";
+import image4 from "@/components/ui/images/WhatsApp Image 2025-04-14 at 23.51.08.jpeg";
+import image5 from "@/components/ui/images/WhatsApp Image 2025-04-14 at 23.51.09.jpeg";
+import image6 from "@/components/ui/images/WhatsApp Image 2025-04-14 at 23.51.11.jpeg";
+import image7 from "@/components/ui/images/WhatsApp Image 2025-04-14 at 23.55.36.jpeg";
+import image8 from "@/components/ui/images/WhatsApp Image 2025-04-14 at 23.51.09 (2).jpeg";
 
 interface GalleryImage {
   id: number;
@@ -19,37 +27,37 @@ const galleryImages: GalleryImage[] = [
   {
     id: 2,
     alt: "Imagen de Galería 2",
-    src: "/src/components/ui/images/WhatsApp Image 2025-04-14 at 23.50.39.jpeg",
+    src: image2,
   },
   {
     id: 3,
     alt: "Imagen de Galería 3",
-    src: "/src/components/ui/images/WhatsApp Image 2025-04-14 at 23.51.07.jpeg",
+    src: image3,
   },
   {
     id: 4,
     alt: "Imagen de Galería 4",
-    src: "/src/components/ui/images/WhatsApp Image 2025-04-14 at 23.51.08.jpeg",
+    src: image4,
   },
   {
     id: 5,
     alt: "Imagen de Galería 5",
-    src: "/src/components/ui/images/WhatsApp Image 2025-04-14 at 23.51.09.jpeg",
+    src: image5,
   },
   {
     id: 6,
     alt: "Imagen de Galería 6",
-    src: "/src/components/ui/images/WhatsApp Image 2025-04-14 at 23.51.11.jpeg",
+    src: image6,
   },
   {
     id: 7,
     alt: "Imagen de Galería 7",
-    src: "/src/components/ui/images/WhatsApp Image 2025-04-14 at 23.55.36.jpeg",
+    src: image7,
   },
   {
     id: 8,
     alt: "Imagen de Galería 8",
-    src: "/src/components/ui/images/WhatsApp Image 2025-04-14 at 23.51.09 (2).jpeg",
+    src: image8,
   },
 ];
 
