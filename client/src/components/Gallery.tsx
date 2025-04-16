@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
@@ -18,7 +17,7 @@ interface GalleryImage {
   src: string;
 }
 
-const galleryImages: GalleryImage[] = [
+const galleryImages = [
   {
     id: 1,
     alt: "Imagen de Galería 1",
@@ -120,48 +119,29 @@ const Gallery: React.FC = () => {
             <motion.div
               key={image.id}
               variants={itemVariants}
-              className="relative overflow-hidden bg-muted group"
-              style={{ paddingTop: "100%" }}
+              className="relative overflow-hidden rounded-lg aspect-square"
             >
               <img
                 src={image.src}
                 alt={image.alt}
-                className="absolute inset-0 w-full h-full object-cover"
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 hover:scale-110"
+                onClick={() => openImage(image)}
               />
-              <div className="absolute inset-0 flex items-center justify-center bg-muted">
-                <i className="fas fa-image text-4xl text-muted-foreground opacity-30"></i>
-              </div>
-              <div className="absolute inset-0 bg-primary bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
-                <div className="transform scale-0 group-hover:scale-100 transition-transform duration-300">
-                  <button
-                    onClick={() => openImage(image)}
-                    className="bg-background text-primary p-2 rounded-full"
-                  >
-                    <i className="fas fa-expand-alt"></i>
-                  </button>
-                </div>
-              </div>
             </motion.div>
           ))}
         </div>
       </motion.div>
 
       <Dialog open={selectedImage !== null} onOpenChange={closeImage}>
-        <DialogContent className="sm:max-w-4xl bg-background border-2 border-secondary">
-          <div className="relative pt-[75%] w-full overflow-hidden">
-            <img
-              src={selectedImage?.src}
-              alt={selectedImage?.alt}
-              className="absolute inset-0 w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 flex items-center justify-center bg-muted">
-              <i className="fas fa-image text-6xl text-muted-foreground opacity-30"></i>
-            </div>
-          </div>
-          <div className="text-center py-2">
-            <p className="font-cinzel text-lg text-primary">
-              {selectedImage?.alt || "Imagen de Galería"}
-            </p>
+        <DialogContent className="sm:max-w-4xl">
+          <div className="relative aspect-square w-full overflow-hidden">
+            {selectedImage && (
+              <img
+                src={selectedImage.src}
+                alt={selectedImage.alt}
+                className="absolute inset-0 w-full h-full object-contain"
+              />
+            )}
           </div>
         </DialogContent>
       </Dialog>
