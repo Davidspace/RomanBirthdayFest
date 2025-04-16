@@ -66,10 +66,12 @@ const Location: React.FC = () => {
           <motion.div 
             variants={imageVariants}
             className="rounded-sm overflow-hidden shadow-lg">
-            <div className="w-full pt-[75%] relative bg-muted">
-              <div className="absolute inset-0 flex items-center justify-center">
-                <i className="fas fa-home text-6xl text-muted-foreground opacity-30"></i>
-              </div>
+            <div className="w-full pt-[75%] relative bg-muted overflow-hidden">
+              <img 
+                src="/src/components/ui/images/WhatsApp Image 2025-04-14 at 23.51.09.jpeg"
+                alt="Location Villa"
+                className="absolute inset-0 w-full h-full object-cover"
+              />
             </div>
           </motion.div>
           
