@@ -32,32 +32,14 @@ const Footer: React.FC = () => {
             </ul>
           </div>
 
-          <div>
+          <div className="flex flex-col items-center mr-40">
             <h3 className="font-cinzel text-xl mb-4">SIGUE AL IMPERIO</h3>
             <div className="flex space-x-4 mt-4">
               <a
-                href="#"
-                className="bg-secondary text-primary p-3 rounded-full hover:bg-opacity-90 transition-opacity"
-              >
-                <i className="fab fa-facebook-f"></i>
-              </a>
-              <a
-                href="#"
+                href="https://www.instagram.com/chatis23_/"
                 className="bg-secondary text-primary p-3 rounded-full hover:bg-opacity-90 transition-opacity"
               >
                 <i className="fab fa-instagram"></i>
-              </a>
-              <a
-                href="#"
-                className="bg-secondary text-primary p-3 rounded-full hover:bg-opacity-90 transition-opacity"
-              >
-                <i className="fab fa-twitter"></i>
-              </a>
-              <a
-                href="#"
-                className="bg-secondary text-primary p-3 rounded-full hover:bg-opacity-90 transition-opacity"
-              >
-                <i className="fab fa-tiktok"></i>
               </a>
             </div>
           </div>

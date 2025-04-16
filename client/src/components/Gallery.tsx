@@ -6,7 +6,7 @@ import albaBlanca from "@/components/ui/images/alba_blanca.jpeg";
 import image2 from "@/components/ui/images/WhatsApp Image 2025-04-14 at 23.50.39.jpeg";
 import image3 from "@/components/ui/images/WhatsApp Image 2025-04-14 at 23.51.07.jpeg";
 import image4 from "@/components/ui/images/WhatsApp Image 2025-04-14 at 23.51.08.jpeg";
-import image5 from "@/components/ui/images/WhatsApp Image 2025-04-14 at 23.51.09.jpeg";
+import image5 from "@/components/ui/images/WhatsApp Image 2025-04-14 at 23.51.09 (1).jpeg";
 import image6 from "@/components/ui/images/WhatsApp Image 2025-04-14 at 23.51.11.jpeg";
 import image7 from "@/components/ui/images/WhatsApp Image 2025-04-14 at 23.55.36.jpeg";
 import image8 from "@/components/ui/images/WhatsApp Image 2025-04-14 at 23.51.09 (2).jpeg";
