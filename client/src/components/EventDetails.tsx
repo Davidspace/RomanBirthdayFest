@@ -42,7 +42,7 @@ const EventDetails: React.FC = () => {
           </h2>
           <div className="w-24 h-1 bg-secondary mx-auto mb-8"></div>
           <p className="font-lato text-lg max-w-2xl mx-auto">
-            Una gran celebración romana te espera. Ponte tu toga y corona de
+            Una gran celebración romana te espera. Ponte tu cinturón y corona de
             laurel mientras honramos a nuestras cumpleañeras al verdadero estilo
             imperial.
           </p>
@@ -60,7 +60,7 @@ const EventDetails: React.FC = () => {
               <h3 className="font-cinzel text-2xl text-primary">CUÁNDO</h3>
             </div>
             <p className="font-lato text-lg mb-4">
-              17 de mayo, desde el almuerzo hasta que los dioses regresen al
+              17 de mayo, desde la cena hasta que los dioses regresen al
               Olimpo
             </p>
             <div className="font-cinzel text-muted text-lg border-t-2 border-dashed border-muted pt-4 mt-4">
@@ -80,11 +80,11 @@ const EventDetails: React.FC = () => {
               <h3 className="font-cinzel text-2xl text-primary">DÓNDE</h3>
             </div>
             <p className="font-lato text-lg mb-4">
-              En la villa rural a las afueras de la ciudad
+              En el restaurante más prominente de Almeria, donde el vino fluye como el Nilo y la comida es tan buena que los dioses se la robaron
             </p>
             <div className="font-cinzel text-muted text-lg border-t-2 border-dashed border-muted pt-4 mt-4">
-              <p>La Villa Rústica</p>
-              <p>Direcciones proporcionadas al confirmar</p>
+              <p>PINTAMONAS ALMERÍA</p>
+              <p>CERCANO AL BASTO MAR</p>
             </div>
           </motion.div>
         </div>
@@ -95,7 +95,7 @@ const EventDetails: React.FC = () => {
         >
           <div className="text-center mb-8">
             <h3 className="font-cinzel text-3xl text-primary mb-2">
-              TEMÁTICA: FIESTA DE DISFRACES ROMANOS
+              TEMÁTICA: FIESTA ROMANA
             </h3>
             <div className="w-20 h-1 bg-secondary mx-auto mb-4"></div>
           </div>
@@ -109,8 +109,7 @@ const EventDetails: React.FC = () => {
                 VESTIMENTA
               </h4>
               <p className="font-lato">
-                Ven con tu mejor atuendo romano: togas, estolas, túnicas o
-                coronas de laurel
+                Ven con tu mejor accesorio romano: estolas, sudariums, paenulas, coronas de laurel...
               </p>
             </div>
 
@@ -120,7 +119,7 @@ const EventDetails: React.FC = () => {
               </div>
               <h4 className="font-cinzel text-xl text-muted mb-2">BANQUETE</h4>
               <p className="font-lato">
-                Se servirá un lujoso banquete romano con delicias de todo el
+                Se servirá un lujoso banquete mediterráneo con delicias de todo el
                 imperio
               </p>
             </div>
