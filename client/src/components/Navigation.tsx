@@ -22,7 +22,7 @@ const Navigation: React.FC = () => {
             <a href="#honorees" className="hover:text-secondary transition-colors">HOMENAJEADAS</a>
             <a href="#gallery" className="hover:text-secondary transition-colors">GALERÍA</a>
             <a href="#location" className="hover:text-secondary transition-colors">UBICACIÓN</a>
-            <a href="#rsvp" className="hover:text-secondary transition-colors">RSVP</a>
+            <a href="#quest" className="hover:text-secondary transition-colors">MISIONES</a>
           </div>
           <div className="md:hidden">
             <button 
@@ -69,10 +69,10 @@ const Navigation: React.FC = () => {
                 UBICACIÓN
               </a>
               <a 
-                href="#rsvp" 
+                href="#quest" 
                 onClick={closeMenu}
                 className="block px-3 py-2 hover:bg-secondary hover:text-primary rounded-md">
-                RSVP
+                MISIONES
               </a>
             </div>
           </motion.div>
