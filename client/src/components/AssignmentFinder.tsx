@@ -197,7 +197,7 @@ const AssignmentFinder: React.FC = () => {
                   <CardTitle className="font-cinzel text-xl text-primary text-center">
                     Asignación para {selectedAssistant.name}
                   </CardTitle>
-                  <CardDescription className="text-center font-lato">
+                  <CardDescription className="text-center font-lato text-primary">
                     Compañero de misión:{" "}
                     <span className="font-bold text-primary">
                       {selectedAssistant.pair}
