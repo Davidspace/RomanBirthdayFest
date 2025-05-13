@@ -195,9 +195,12 @@ const AssignmentFinder: React.FC = () => {
                 </CardHeader>
                 <CardContent className="pt-6">
                   <div className="p-4 bg-muted/20 rounded-sm border border-secondary">
-                    <h4 className="font-cinzel text-lg text-primary mb-2">
-                      Tu Misión Imperial:
-                    </h4>
+                    <div className="text-center mb-4">
+                      <h4 className="font-cinzel text-xl text-primary">
+                        MISIÓN ASIGNADA
+                      </h4>
+                      <div className="w-16 h-0.5 bg-secondary mx-auto mt-2"></div>
+                    </div>
                     <p className="font-lato">{selectedAssistant.quest}</p>
                   </div>
                   <div className="mt-6 flex justify-center">
