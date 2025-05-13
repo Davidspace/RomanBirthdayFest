@@ -22,6 +22,7 @@ interface Assistant {
   name: string;
   pair: string;
   quest: string;
+  questTitle: string;
 }
 
 const assistants: Assistant[] = [
@@ -29,6 +30,7 @@ const assistants: Assistant[] = [
     id: "1",
     name: "Nerea",
     pair: "Carla",
+    questTitle: "MAGISTRADA DE LA LEY",
     quest:
       "Encargarse de multar cualquier comportamiento que se considere multable (la multa es invitar a un chupito a cualquier otra persona del cumpleaños). Llevar una libreta para anotar las multas.",
   },
@@ -36,6 +38,7 @@ const assistants: Assistant[] = [
     id: "2",
     name: "Marco",
     pair: "Lucía",
+    questTitle: "POETAS IMPERIALES",
     quest:
       "Recitar juntos un poema en latín (proporcionado en la fiesta) frente a al menos 5 invitados.",
   },
@@ -43,6 +46,7 @@ const assistants: Assistant[] = [
     id: "3",
     name: "Julia",
     pair: "Antonio",
+    questTitle: "ARTESANOS DEL LAUREL",
     quest:
       "Crear juntos una corona de laurel con materiales disponibles en la fiesta.",
   },
@@ -50,6 +54,7 @@ const assistants: Assistant[] = [
     id: "4",
     name: "Antonio",
     pair: "Julia",
+    questTitle: "CURATOR DE MODAS",
     quest:
       "Organizar un pequeño desfile de moda romana con al menos 4 participantes.",
   },
@@ -57,6 +62,7 @@ const assistants: Assistant[] = [
     id: "5",
     name: "Claudia",
     pair: "Sebastián",
+    questTitle: "HISTORIADORES CULINARIOS",
     quest:
       "Encontrar una antigua receta romana y preparar un breve discurso sobre ella.",
   },
@@ -64,6 +70,7 @@ const assistants: Assistant[] = [
     id: "6",
     name: "Sebastián",
     pair: "Claudia",
+    questTitle: "MAESTROS DEL ENIGMA",
     quest:
       "Crear y liderar un juego de adivinanzas de temática romana para un grupo de invitados.",
   },
@@ -71,6 +78,7 @@ const assistants: Assistant[] = [
     id: "7",
     name: "Elena",
     pair: "Gabriel",
+    questTitle: "ESCRIBAS IMPERIALES",
     quest:
       "Escribir un decreto imperial humorístico y leerlo en voz alta durante la celebración.",
   },
@@ -78,12 +86,14 @@ const assistants: Assistant[] = [
     id: "8",
     name: "Gabriel",
     pair: "Elena",
+    questTitle: "DRAMATURGOS ROMANOS",
     quest: "Organizar una breve representación de una escena histórica romana.",
   },
   {
     id: "9",
     name: "Valeria",
     pair: "Diego",
+    questTitle: "ARTÍFICES DEL ESCUDO",
     quest:
       "Crear un escudo romano decorativo con los materiales disponibles en la fiesta.",
   },
@@ -91,6 +101,7 @@ const assistants: Assistant[] = [
     id: "10",
     name: "Diego",
     pair: "Valeria",
+    questTitle: "AURIGAS DEL CIRCO",
     quest:
       "Organizar una pequeña competencia de carreras de cuadrigas (usando caballos imaginarios).",
   },
@@ -197,7 +208,7 @@ const AssignmentFinder: React.FC = () => {
                   <div className="p-4 bg-muted/20 rounded-sm border border-secondary">
                     <div className="text-center mb-4">
                       <h4 className="font-cinzel text-xl text-primary">
-                        MISIÓN ASIGNADA
+                        {selectedAssistant.questTitle}
                       </h4>
                       <div className="w-16 h-0.5 bg-secondary mx-auto mt-2"></div>
                     </div>
