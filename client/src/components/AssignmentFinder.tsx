@@ -99,11 +99,21 @@ const AssignmentFinder: React.FC = () => {
   const isInView = useInView(ref, { once: true, amount: 0.2 });
 
   const handleChange = (value: string) => {
-    const selectedName = assistants
-      .map(a => ({ ...a, originalName: a.name }))
-      .concat(assistants.map(a => ({ ...a, originalName: a.pair, name: a.pair, pair: a.name })))
-      .find(a => a.id === value && a.name === a.originalName);
-    setSelectedAssistant(selectedName || null);
+    const assistant = assistants.find(a => a.id === value);
+    if (!assistant) return;
+
+    const selectedName = document.querySelector(`[value="${value}"]`)?.textContent;
+    if (!selectedName) return;
+
+    if (selectedName === assistant.name) {
+      setSelectedAssistant(assistant);
+    } else if (selectedName === assistant.pair) {
+      setSelectedAssistant({
+        ...assistant,
+        name: assistant.pair,
+        pair: assistant.name
+      });
+    }
   };
 
   const sectionVariants = {
