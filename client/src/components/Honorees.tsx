@@ -1,6 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
+import albaHonoree from "@/components/ui/images/ALBA_HONOREE.jpeg";
+import blancaHonoree from "@/components/ui/images/alba_blanca.jpeg";
 
 const HonoreeCard: React.FC<{
   name: string;
@@ -10,7 +12,7 @@ const HonoreeCard: React.FC<{
   trait2: string;
   icon1: string;
   icon2: string;
-  imagePlaceholder: string;
+  image: string;
 }> = ({
   name,
   title,
@@ -19,7 +21,7 @@ const HonoreeCard: React.FC<{
   trait2,
   icon1,
   icon2,
-  imagePlaceholder,
+  image,
 }) => {
   return (
     <div className="bg-background text-foreground p-8 rounded-sm shadow-lg border-2 border-secondary transform transition-transform hover:scale-105 duration-300">
@@ -27,9 +29,11 @@ const HonoreeCard: React.FC<{
         className="relative mb-6 overflow-hidden rounded-sm"
         style={{ paddingTop: "100%" }}
       >
-        <div className="absolute inset-0 flex items-center justify-center bg-muted bg-opacity-20">
-          <i className="fas fa-user-circle text-6xl text-muted opacity-30"></i>
-        </div>
+        <img 
+          src={image} 
+          alt={name}
+          className="absolute inset-0 w-full h-full object-cover"
+        />
         <div className="absolute inset-x-0 bottom-0 bg-secondary bg-opacity-80 text-foreground p-2 text-center font-cinzel">
           {name}
         </div>
@@ -120,7 +124,7 @@ const Honorees: React.FC = () => {
               trait2="Experta Bromista"
               icon1="fas fa-wine-bottle"
               icon2="fas fa-laugh"
-              imagePlaceholder="birthday-girl-1"
+              image={albaHonoree}
             />
           </motion.div>
 
@@ -133,7 +137,7 @@ const Honorees: React.FC = () => {
               trait2="Maestra de Juegos"
               icon1="fas fa-music"
               icon2="fas fa-dice"
-              imagePlaceholder="birthday-girl-2"
+              image={blancaHonoree}
             />
           </motion.div>
         </div>
