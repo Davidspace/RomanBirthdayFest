@@ -155,15 +155,26 @@ const AssignmentFinder: React.FC = () => {
                 </SelectTrigger>
                 <SelectContent className="bg-background border-2 border-secondary">
                   <SelectGroup>
-                    {assistants.map((assistant) => (
-                      <SelectItem
-                        key={assistant.id}
-                        value={assistant.id}
-                        className="font-lato"
-                      >
-                        {assistant.name}
-                      </SelectItem>
-                    ))}
+                    {[
+                      ...assistants.map((assistant) => ({
+                        id: assistant.id,
+                        name: assistant.name,
+                      })),
+                      ...assistants.map((assistant) => ({
+                        id: assistant.id,
+                        name: assistant.pair,
+                      })),
+                    ]
+                      .sort((a, b) => a.name.localeCompare(b.name))
+                      .map((person) => (
+                        <SelectItem
+                          key={`${person.id}-${person.name}`}
+                          value={person.id}
+                          className="font-lato"
+                        >
+                          {person.name}
+                        </SelectItem>
+                      ))}
                   </SelectGroup>
                 </SelectContent>
               </Select>
