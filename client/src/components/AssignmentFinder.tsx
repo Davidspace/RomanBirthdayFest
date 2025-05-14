@@ -99,13 +99,11 @@ const AssignmentFinder: React.FC = () => {
   const isInView = useInView(ref, { once: true, amount: 0.2 });
 
   const handleChange = (value: string) => {
-    const assistant = assistants.find(a => a.id === value);
+    const [id, name] = value.split('-');
+    const assistant = assistants.find(a => a.id === id);
     if (!assistant) return;
 
-    const selectedName = document.querySelector(`[data-id="${value}"][data-value="${value}"]`)?.textContent?.trim();
-    if (!selectedName) return;
-
-    const isSelectedNamePair = selectedName === assistant.pair;
+    const isSelectedNamePair = name === assistant.pair;
     setSelectedAssistant({
       ...assistant,
       name: isSelectedNamePair ? assistant.pair : assistant.name,
@@ -181,10 +179,8 @@ const AssignmentFinder: React.FC = () => {
                       .map((person) => (
                         <SelectItem
                           key={`${person.id}-${person.name}`}
-                          value={person.id}
+                          value={`${person.id}-${person.name}`}
                           className="font-lato"
-                          data-id={person.id}
-                          data-value={person.id}
                         >
                           {person.name}
                         </SelectItem>
