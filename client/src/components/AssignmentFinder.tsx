@@ -105,15 +105,12 @@ const AssignmentFinder: React.FC = () => {
     const selectedName = document.querySelector(`[data-id="${value}"][data-value="${value}"]`)?.textContent?.trim();
     if (!selectedName) return;
 
-    if (selectedName === assistant.pair) {
-      setSelectedAssistant({
-        ...assistant,
-        name: assistant.pair,
-        pair: assistant.name
-      });
-    } else {
-      setSelectedAssistant(assistant);
-    }
+    const isSelectedNamePair = selectedName === assistant.pair;
+    setSelectedAssistant({
+      ...assistant,
+      name: isSelectedNamePair ? assistant.pair : assistant.name,
+      pair: isSelectedNamePair ? assistant.name : assistant.pair
+    });
   };
 
   const sectionVariants = {
