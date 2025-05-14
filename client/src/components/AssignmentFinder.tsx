@@ -102,15 +102,10 @@ const AssignmentFinder: React.FC = () => {
     const assistant = assistants.find(a => a.id === value);
     if (!assistant) return;
 
-    const allNames = assistants.flatMap(a => [
-      { id: a.id, name: a.name, isPair: false },
-      { id: a.id, name: a.pair, isPair: true }
-    ]);
+    const selectedName = document.querySelector(`[data-id="${value}"][data-value="${value}"]`)?.textContent?.trim();
+    if (!selectedName) return;
 
-    const selectedPerson = allNames.find(p => p.id === value);
-    if (!selectedPerson) return;
-
-    if (selectedPerson.isPair) {
+    if (selectedName === assistant.pair) {
       setSelectedAssistant({
         ...assistant,
         name: assistant.pair,
@@ -191,6 +186,8 @@ const AssignmentFinder: React.FC = () => {
                           key={`${person.id}-${person.name}`}
                           value={person.id}
                           className="font-lato"
+                          data-id={person.id}
+                          data-value={person.id}
                         >
                           {person.name}
                         </SelectItem>
