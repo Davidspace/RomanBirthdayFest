@@ -102,17 +102,22 @@ const AssignmentFinder: React.FC = () => {
     const assistant = assistants.find(a => a.id === value);
     if (!assistant) return;
 
-    const selectedName = document.querySelector(`[value="${value}"]`)?.textContent;
-    if (!selectedName) return;
+    const allNames = assistants.flatMap(a => [
+      { id: a.id, name: a.name, isPair: false },
+      { id: a.id, name: a.pair, isPair: true }
+    ]);
 
-    if (selectedName === assistant.name) {
-      setSelectedAssistant(assistant);
-    } else if (selectedName === assistant.pair) {
+    const selectedPerson = allNames.find(p => p.id === value);
+    if (!selectedPerson) return;
+
+    if (selectedPerson.isPair) {
       setSelectedAssistant({
         ...assistant,
         name: assistant.pair,
         pair: assistant.name
       });
+    } else {
+      setSelectedAssistant(assistant);
     }
   };
 
