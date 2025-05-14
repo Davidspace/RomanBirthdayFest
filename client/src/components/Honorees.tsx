@@ -1,8 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
-import albaHonoree from "@/components/ui/images/ALBA_HONOREE.jpeg";
-import blancaHonoree from "@/components/ui/images/alba_blanca.jpeg";
+import albaHonoree from "@/components/ui/images/ALBA_HONOREE_PEQUEÑA.jpeg";
+import blancaHonoree from "@/components/ui/images/BLANCA_WEB.jpg";
 
 const HonoreeCard: React.FC<{
   name: string;
@@ -13,24 +13,15 @@ const HonoreeCard: React.FC<{
   icon1: string;
   icon2: string;
   image: string;
-}> = ({
-  name,
-  title,
-  description,
-  trait1,
-  trait2,
-  icon1,
-  icon2,
-  image,
-}) => {
+}> = ({ name, title, description, trait1, trait2, icon1, icon2, image }) => {
   return (
     <div className="bg-background text-foreground p-8 rounded-sm shadow-lg border-2 border-secondary transform transition-transform hover:scale-105 duration-300">
       <div
         className="relative mb-6 overflow-hidden rounded-sm"
         style={{ paddingTop: "100%" }}
       >
-        <img 
-          src={image} 
+        <img
+          src={image}
           alt={name}
           className="absolute inset-0 w-full h-full object-cover"
         />

@@ -85,7 +85,7 @@ const assistants: Assistant[] = [
     id: "8",
     name: "David",
     pair: "Claudia",
-    questTitle: "ANIMADORES DE BAILE",
+    questTitle: "GUÍAS DE LA FIESTA",
     quest:
       "Cada vez que alguien diga “no puedo más” o “me voy ya”, debéis intervenir y motivarlos a quedarse.",
   },
