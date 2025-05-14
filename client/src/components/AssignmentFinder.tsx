@@ -151,7 +151,9 @@ const AssignmentFinder: React.FC = () => {
             <div className="max-w-md mx-auto">
               <Select onValueChange={handleChange}>
                 <SelectTrigger className="w-full p-4 border-2 border-muted rounded-sm focus:border-primary focus:outline-none bg-background">
-                  <SelectValue placeholder="Elige tu nombre..." />
+                  <SelectValue placeholder="Elige tu nombre..." className="font-lato">
+                    {selectedAssistant?.name || "Elige tu nombre..."}
+                  </SelectValue>
                 </SelectTrigger>
                 <SelectContent className="bg-background border-2 border-secondary">
                   <SelectGroup>
