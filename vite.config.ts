@@ -17,7 +17,22 @@ export default defineConfig({
   },
   root: path.resolve(import.meta.dirname, "client"),
   build: {
-    outDir: path.resolve(import.meta.dirname, "client"),
+    outDir: path.resolve(import.meta.dirname, "dist/client"),
     emptyOutDir: true,
+    assetsDir: "assets",
+    rollupOptions: {
+      input: {
+        main: path.resolve(import.meta.dirname, "client/index.html")
+      }
+    }
   },
+  server: {
+    port: 3000,
+    proxy: {
+      '/api': {
+        target: 'http://localhost:3001',
+        changeOrigin: true
+      }
+    }
+  }
 });
