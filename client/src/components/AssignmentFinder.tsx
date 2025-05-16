@@ -30,17 +30,17 @@ const assistants: Assistant[] = [
     id: "1",
     name: "Nerea",
     pair: "Carla",
-    questTitle: "POLICIAS DE LA NOCHE",
+    questTitle: "CUPIDOS DE LA NOCHE",
     quest:
-      "Encargarse de multar cualquier comportamiento que se considere multable (la multa es invitar a un chupito a cualquier otra persona del cumpleaños). Llevar una libreta para anotar las multas.",
+      "Lograr éxitos románticos para los invitados en la oscuridad de la noche.",
   },
   {
     id: "2",
     name: "Javi wavee",
     pair: "Inés",
-    questTitle: "ANUNCIO DE CAMBIOS",
+    questTitle: "RELACIONES PÚBLICAS",
     quest:
-      "Anunciar cada cambio de fase en la noche: inicio de la cena, brindis, juegos, salida, etc.",
+      "Presentar a personas que no se conozcan y fomentar conversaciones entre ellas.",
   },
   {
     id: "3",
@@ -48,38 +48,38 @@ const assistants: Assistant[] = [
     pair: "Julia",
     questTitle: "COMITÉ DE CELEBRACIONES ESPONTÁNEAS",
     quest:
-      "Cada hora en punto, interrumpir lo que esté ocurriendo y provocar una celebración absurda (aplaudir sin motivo, cantar “cumpleaños feliz”, formar una cola, etc.).",
+      "Forzar celebraciones absurdas cada hora en punto.",
   },
   {
     id: "4",
     name: "Cristo",
     pair: "Pauper",
-    questTitle: "RELACIONES PÚBLICAS",
+    questTitle: "COMITÉ DE PRESENTACIONES",
     quest:
-      "Presentar a lo largo de la noche a toda la gente que no se conoce entre sí, obligándolos a contar algo de su vida y mantener una conversación mínima.",
+      "Anunciar los cambios de fase durante la noche (cena, brindis, juegos, salida, etc.).",
   },
   {
     id: "5",
     name: "Adela",
     pair: "Cristina",
-    questTitle: "COREOGRAFÍA",
+    questTitle: "COMITÉ DE BAILE",
     quest:
-      "Preparar una mini coreo con una canción actual y conseguir que todo el cumple se sepa el baile y hacerlo juntos.",
+      "Preparar y enseñar una coreografía conjunta con una canción actual.",
   },
   {
     id: "6",
     name: "Adrián",
     pair: "Joa",
-    questTitle: "BRINDIS ÉPICO",
-    quest: "Redactar un brindis épico para leer en la cena.",
+    questTitle: "COMITÉ DE BRINDIS",
+    quest: "Redactar un brindis épico para la cena.",
   },
   {
     id: "7",
     name: "Ángel",
     pair: "Andrea",
-    questTitle: "ANIMADORES DE BAILE",
+    questTitle: "POLICIAS DE LA NOCHE",
     quest:
-      "Cada vez que veáis a alguien sin bailar, debéis animarlos a unirse a la pista.",
+      "Multar comportamientos considerados inadecuados (multas son chupitos a otros).",
   },
   {
     id: "8",
@@ -87,7 +87,7 @@ const assistants: Assistant[] = [
     pair: "Claudia",
     questTitle: "GUÍAS DE LA FIESTA",
     quest:
-      "Cada vez que alguien diga “no puedo más” o “me voy ya”, debéis intervenir y motivarlos a quedarse.",
+      "Animar a quienes digan “no puedo más” o “me voy ya” para que sigan disfrutando.",
   },
 ];
 
