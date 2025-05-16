@@ -146,8 +146,8 @@ const AssignmentFinder: React.FC = () => {
           </h2>
           <div className="w-24 h-1 bg-secondary mx-auto mb-8"></div>
           <p className="font-lato text-lg max-w-2xl mx-auto">
-            Encuentra tu misión imperial y con quien deberás completarla durante
-            la celebración. ¡Gloria y honor aguardan!
+            ¡Comunicad con vuestra pareja, nobles ciudadanos, y que comience la organización de la misión!
+            Que los dioses os guíen y el honor os acompañe en esta gesta nocturna.
           </p>
         </div>
 
