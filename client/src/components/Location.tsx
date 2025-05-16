@@ -78,7 +78,7 @@ const Location: React.FC = () => {
           >
             <div className="w-full pt-[75%] relative bg-muted overflow-hidden">
               <img
-                src="/src/components/ui/images/PINTAMONAS.jpeg"
+                src="/images/PINTAMONAS.jpeg"
                 alt="Location Villa"
                 className="absolute inset-0 w-full h-full object-cover"
               />
