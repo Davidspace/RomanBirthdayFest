@@ -40,7 +40,8 @@ const Header: React.FC = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8, duration: 0.6 }}
             className="font-lato text-lg md:text-xl text-muted mb-8 max-w-2xl mx-auto">
-            Únete a nosotros para una gran celebración en honor a las dos diosas canileras
+            Únete a nosotros para una gran celebración 
+            en honor a las dos diosas canileras
           </motion.p>
           
           <motion.div 
