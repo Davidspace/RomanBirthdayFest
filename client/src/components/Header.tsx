@@ -49,7 +49,7 @@ const Header: React.FC = () => {
             transition={{ delay: 1, duration: 0.6 }}
             className="mt-12">
             <h3 className="font-cinzel text-2xl text-primary mb-4">CUENTA ATRÁS PARA LAS FESTIVIDADES</h3>
-            <CountdownTimer targetDate="May 17, 2025 13:00:00" />
+            <CountdownTimer targetDate="May 17, 2025 21:30:00" />
           </motion.div>
           
           <motion.div 
